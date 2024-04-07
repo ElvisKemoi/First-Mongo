@@ -36,7 +36,7 @@ app.get("/books", (req, res) => {
 			res.status(500).json({
 				error: "Could not fetch the document",
 			});
-		}); // cursor toArray forEach
+		});
 });
 
 app.get("/books/:id", (req, res) => {
